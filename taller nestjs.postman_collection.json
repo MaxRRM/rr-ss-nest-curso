@@ -152,6 +152,15 @@
 					"response": []
 				},
 				{
+					"name": "list by type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/suppliers/type/mayorista"
+					},
+					"response": []
+				},
+				{
 					"name": "create supplier",
 					"request": {
 						"method": "POST",
@@ -261,6 +270,15 @@
 						"method": "GET",
 						"header": [],
 						"url": "localhost:3000/products/66694023ffab6fa1d95d65a9"
+					},
+					"response": []
+				},
+				{
+					"name": "list by type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3000/products/type/hogar"
 					},
 					"response": []
 				},
