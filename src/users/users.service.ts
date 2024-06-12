@@ -17,8 +17,8 @@ export class UsersService {
     if (userExists) throw new EmailAlreadyExistException();
     const { password, ...userData } = createUserDto;
     const hashedPassword = await bcrypt.hash(password, 10);
-    const createUSer = new this.userModel({ ...userData, password: hashedPassword });
-    await createUSer.save();
+    const createUser = new this.userModel({ ...userData, password: hashedPassword });
+    await createUser.save();
     return 'usuario creado con éxito';
   }
 
